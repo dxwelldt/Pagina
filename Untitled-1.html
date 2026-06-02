@@ -1,0 +1,40 @@
+<img
+  id="logo"
+  class="next-particle"
+
+  data-width="550"
+  data-height="550"
+     
+  data-max-width="75%"
+  data-max-height="75%"
+  
+  data-particle-size="0.5"
+     
+  data-gravity="0.02"
+   
+     
+  data-color="#FF0000"
+     
+  data-mouse-force="10"
+ 
+     
+  data-noise="95"
+
+  data-init-position="random"
+  data-init-direction="random"
+  data-fade-position="random"
+  data-fade-direction="random"
+     
+     
+  nextParticle = document.all.logo.nextParticle;
+nextParticle.width = window.innerWidth;
+nextParticle.height = window.innerHeight;
+
+window.onresize = function() {
+  nextParticle.width = window.innerWidth;
+  nextParticle.height = window.innerHeight;
+  nextParticle.start();
+};   
+ 
+  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/23500/nextparticle.png"
+/>
